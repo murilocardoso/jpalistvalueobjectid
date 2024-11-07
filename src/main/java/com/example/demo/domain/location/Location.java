@@ -21,7 +21,7 @@ public class Location implements Persistable<LocationId> {
     @Version 
     private Long version;
     
-
+    // spring data jpa constructor
     private Location() {
         this.id = null;
     }

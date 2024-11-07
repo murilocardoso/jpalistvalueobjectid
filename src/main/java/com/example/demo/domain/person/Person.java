@@ -44,6 +44,7 @@ public class Person implements Persistable<PersonId> {
     @Version 
     private Long version;
 
+    // spring data jpa constructor
     private Person() {
         this.id = null;
         this.locations = Collections.emptyList();        
@@ -55,7 +56,7 @@ public class Person implements Persistable<PersonId> {
     }
 
     public static Person from(PersonId anId, Collection<Location> someLocations) {
-        return new Person(anId, new ArrayList<LocationId>(someLocations.stream().map(Location::getId).collect(Collectors.toList())));
+        return new Person(anId, new ArrayList<>(someLocations.stream().map(Location::getId).collect(Collectors.toList())));
     }
 
     public void addLocation(Location alocation) {

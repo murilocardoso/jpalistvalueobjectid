@@ -7,7 +7,7 @@ import java.io.Serializable;
 public class LocationId implements Serializable {
     private final String value;
     
-    // spring data jpa
+    // spring data jpa constructor
     private LocationId() {
         this.value = null;
     }

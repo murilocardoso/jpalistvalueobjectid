@@ -7,7 +7,7 @@ import jakarta.persistence.Embeddable;
 public class PersonId implements Serializable {
     private final String value;
     
-    // spring data jpa
+    // spring data jpa constructor
     private PersonId() {
         this.value = null;
     }

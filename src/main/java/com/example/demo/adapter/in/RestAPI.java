@@ -9,7 +9,6 @@ import com.example.demo.domain.person.PersonId;
 import com.example.demo.domain.person.Person;
 import com.example.demo.domain.person.PersonRepository;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import java.util.List;
 import java.util.Collection;
 
